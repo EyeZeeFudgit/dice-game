@@ -1,0 +1,112 @@
+body {
+    background-color: bisque;
+}
+
+
+#body-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#head-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 250px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    color: red;
+    font-size: 5rem;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+#dice-flex-container {
+    display: flex;
+    gap: 35px;
+    min-height: 420px;
+
+    @media (min-width: 567px) and (max-width: 725px) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-height: 420px;
+    }
+
+    @media (max-width: 566px) {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        min-height: 840px;
+    }
+
+    @media (min-width: 726px) {
+        justify-content: center;
+    }
+}
+
+#player-1 {
+    @media (min-width: 725px) {
+        margin-right: 100px;
+    }
+}
+
+.dice-container {
+    height: 350px;
+    width: 250px;
+}
+
+.player-head {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.dice-box-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: sandybrown;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+}
+
+.dice-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 220px;
+    height: 220px;
+}
+
+.dice-box > p {
+    background-color: black;
+    border-radius: 100%;
+    height: 55px;
+    width: 55px;
+    padding: auto;
+    margin: auto;
+}
+
+#shuffle-button-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dissapear {
+    background-color: sandybrown !important;
+}
